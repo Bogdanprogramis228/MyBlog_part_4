@@ -28,6 +28,7 @@ class ArticleDetail(DateDetailView):
  
         return context
  
+ 
 class ArticleList(ListView):
     model = Article
     template_name = 'articles_list.html'
@@ -44,10 +45,12 @@ def get_context_data(self, *args, **kwargs):
  
   return context
  
+ 
 def get_queryset(self, *args, **kwargs):
         articles = Article.objects.all()
  
         return articles
+ 
  
 class ArticleCategoryList(ArticleList):
  

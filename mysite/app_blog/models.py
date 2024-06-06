@@ -48,21 +48,17 @@ class Article(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        try:
-            url = reverse('news-detail', kwargs={'year':
-self.pub_date.strftime("%Y"), 'month': self.pub_date.strftime("%m"),'day':
-self.pub_date.strftime("%d"), 'slug': self.slug, })
-        except:
-            url = "/"          
-            return url
-
+            return reverse('news-detail', kwargs={
+                'year':self.pub_date.strftime("%Y"), 
+                'month': self.pub_date.strftime("%m"),'day': self.pub_date.strftime("%d"), 
+                'slug': self.slug, })
 
 class ArticleImage(models.Model):
     article = models.ForeignKey(Article, verbose_name=u'Стаття',
 related_name='images', on_delete=models.CASCADE)
     image = models.ImageField(u'Фото', upload_to='photos')
     title = models.CharField(u'Заголовок', max_length=250, help_text=u'Максимум 250 сим.', blank=True)
-
+    
     class Meta:
         verbose_name = u'Фото для статті'
         verbose_name_plural = u'Фото для статті'

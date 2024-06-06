@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+}
+
+body {
+    background: #0f0f0f; /* Темний фон */
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #00ffcc; /* Неоновий текст */
+}
+
+header {
+    background: #111111;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #00ffcc; /* Неонова лінія */
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #00ffcc;
+    padding: 10px 20px;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    background: #00ffcc;
+    color: #111111;
+}
+
+#about {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    background: #111111;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 2px solid #00ffcc; /* Неонова лінія */
+}
+
+#about h2 {
+    margin-top: 0;
+    color: #ff00ff; /* Яскравий заголовок */
+}
+
+#about img {
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2px solid #ff00ff; /* Неонова рамка */
+}
+
+#about p {
+    margin: 10px 0;
+    text-indent: 3ch;
+    text-align: justify;
+}
+
+.article-block {
+    background: #111111;
+    color: #00ffcc;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 2px solid #00ffcc; /* Неонова лінія */
+}
+
+.article-block a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+.article-block h4 {
+    margin-top: 0;
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: #ff00ff; /* Яскравий заголовок */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.article-block h4:hover {
+    color: #ffff00; /* Яскравий ховер ефект */
+}
+
+body > div > div > ol > li {
+    margin: 0 5px;
+}
+
+div.container-image > img {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+    text-indent: 3ch;
+}
+
+.navbar-default {
+    background-color: #111111;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.navbar-default .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar-default .container a {
+    text-decoration: none;
+    color: #00ffcc;
+    padding: 10px 20px;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.navbar-default .container a:hover {
+    background: #00ffcc;
+    color: #111111;
+}
